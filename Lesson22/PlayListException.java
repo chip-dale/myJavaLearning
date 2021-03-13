@@ -1,5 +1,6 @@
 public class PlayListException extends Exception {
     public PlayListException() {
+        super();
     }
 
     public PlayListException(String message) {
@@ -14,7 +15,7 @@ public class PlayListException extends Exception {
         super(cause);
     }
 
-    public PlayListException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+    protected PlayListException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 }

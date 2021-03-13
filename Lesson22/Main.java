@@ -38,24 +38,27 @@ public class Main {
         list[3] = new Song("Metallica","Nothing Else Matters",Genre.ROCK);
         list[4] = new Song("ЦОЙ","группа крови",Genre.ROCK);
         Player p = new Player(list,i);
-        System.out.println("MY PLAYLIST:");
+        System.out.println(ConsoleColors.PURPLE_UNDERLINED + "MY PLAYLIST:" + ConsoleColors.RESET);
         for (i = 0; i < 5; i++) {
-            System.out.println(list[i]);
+            System.out.println(ConsoleColors.CYAN_BOLD + list[i] + ConsoleColors.RESET);
         }
         System.out.println();
+
+
         System.out.println("PLAY: " + p.play());
-        p.next();
-        System.out.println("PLAY: " + p.play());
-        p.next();
         p.next();
         System.out.println("PLAY: " + p.play());
         p.previous();
         System.out.println("PLAY: " + p.play());
-        //p.next();
-        //p.next();
-        //System.out.println("PLAY: " + p.play());
-        p.searchByGenre(Genre.ROCK);
-        System.out.println(p.searchByGenre(Genre.ROCK));
-        System.out.println("PLAY: " + p.play());
+        while (true) {
+            // ИСКЛЮЧИТЕЛЬНЫЙ КОТ НЕ СУЩЕСТВУЕТ (=^..^=)
+            try {
+                p.next();
+                System.out.println("PLAY: " + p.play());
+                throw new PlayListException();
+            } catch (PlayListException e) {
+                System.out.println(ConsoleColors.RED_BACKGROUND + "Вы дошли до конца списка песен" + ConsoleColors.RESET);
+            }
+        }
     }
 }

@@ -1,3 +1,5 @@
+import java.lang.*;
+
 public class Player implements MusicPlayer {
     private Song[] list;
     private int i;
@@ -24,14 +26,12 @@ public class Player implements MusicPlayer {
 
     @Override
     public Song next() {
-        i++;
-        return list[i];
+        return list[++i];
     }
 
     @Override
     public Song previous() {
-        i--;
-        return list[i];
+        return list[--i];
     }
 
     @Override
