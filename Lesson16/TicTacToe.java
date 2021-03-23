@@ -127,7 +127,7 @@ public class TicTacToe {
                     throw new IOException();
                 } catch (IOException e) {
                     System.out.print("UNEXPECTED VALUE: " + pos +
-                            "\n(!) Yon can use only one of the next numbers: " +
+                            "\n(!) You can use only one of the next numbers: " +
                             "1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9\n\tPLEASE TRY AGAIN: ");
                     play(gameGrid, sc.next(), symbol);
                 }
