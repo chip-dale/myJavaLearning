@@ -11,7 +11,7 @@ out of range
  */
 import java.util.Scanner;
 
-public class Task4 {
+public class NumInterval {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.println("PLEASE ENTER NUM:");
