@@ -4,7 +4,7 @@ import java.util.Scanner;
 цифры должны располагаться в обратном порядке (например, вводим число 1234 – в результате будет 4321).
 Не использовать строки и массивы.
  */
-public class Task2 {
+public class ReverseNum {
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
 
