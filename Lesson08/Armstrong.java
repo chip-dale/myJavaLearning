@@ -4,7 +4,7 @@ import java.util.Scanner;
 Например:
 153 = 1 в степени 3 + 5 в степени 3 + 3 в степени 3
  */
-public class Task3 {
+public class Armstrong {
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
 
