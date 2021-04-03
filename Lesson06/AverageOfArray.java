@@ -8,7 +8,7 @@ Fidan Ismailova
  */
 import java.util.Scanner;
 
-public class Lesson6Task3 {
+public class AverageOfArray {
     public static void main (String[] args){
         Scanner sc = new Scanner(System.in);
 
