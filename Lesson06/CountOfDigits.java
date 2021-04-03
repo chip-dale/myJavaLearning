@@ -10,7 +10,7 @@ Fidan Ismailova
  */
 import java.util.Scanner;
 
-public class Lesson6Task5 {
+public class CountOfDigits {
     public static void main (String[] args){
         Scanner sc = new Scanner(System.in);
 
