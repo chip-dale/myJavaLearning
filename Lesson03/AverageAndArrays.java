@@ -6,7 +6,7 @@
     ЗАДАЧА: Найти ср.арифм.значение массива (без цикла for);
     Записать "Hello World!" через массив (не использовать String!)
 */
-public class AverageArray {
+public class AverageAndArrays {
     public static void main (String[] args){
     // Среднее арифметическое значение
         //вариант1
