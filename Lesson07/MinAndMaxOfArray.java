@@ -3,7 +3,7 @@
  */
 import java.util.Scanner;
 
-public class Task1 {
+public class MinAndMaxOfArray {
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
 
