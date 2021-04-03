@@ -1,6 +1,6 @@
 import java.util.Scanner;
     /* Исмаилова Фидан */
-public class Lesson4Task4 {
+public class SumOfEvenNum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
